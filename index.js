@@ -68,9 +68,8 @@ function getRemainingTime(period) {
     const elapsedTime = (endTime - currentTime);
     const hours = Math.floor(elapsedTime / 3600000); // Convert milliseconds to hours
     const minutes = Math.floor((elapsedTime % 3600000) / 60000); // Convert remaining milliseconds to minutes
-    const seconds = Math.floor((elapsedTime % 60000) / 1000); 
 
-    const remainingTimeString = `${hours > 0 ? `${hours}h ` : ''}${minutes}m ${seconds}s`;
+    const remainingTimeString = `${hours > 0 ? `${hours}h ` : ''}${minutes}m`;
 
     return remainingTimeString;
   }
@@ -187,7 +186,7 @@ async function timer() {
 async function start() {
     const msg = await getMessage();
     timer();
-    setInterval(timer, 500);
+    setInterval(timer, 3000);
     
 }
 

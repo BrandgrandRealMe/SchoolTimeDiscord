@@ -1,0 +1,14 @@
+[
+    {
+        "id": 0,
+        "title": "First Period",
+        "start": "8:15AM",
+        "end": "9:00AM"
+    },
+    {
+        "id": 1,
+        "title": "Second Period",
+        "start": "9:05AM",
+        "end": "9:45AM"
+    }
+]
